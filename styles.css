@@ -1,0 +1,41 @@
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: linear-gradient(blue,yellow);
+    text-align: center;
+    
+}
+
+#textInput {
+    margin-top: 25px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: yellow;
+}
+
+img { 
+    border: 20px solid blue;
+    border-radius: 40px;
+}
+
+#container {
+    background-image: linear-gradient(yellow, blue);
+    padding: 20px;
+    border: 20px solid blue;
+    border-radius: 60px;
+}
+
+#mph, #celFer {
+    width: 50px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+}

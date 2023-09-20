@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body>
+        
+        <div id="container">
+            <div id="titlePage">
+                <img src = 'titlepage.jpg' width="500px">
+            </div>
+
+            <div>
+                <input id="textInput" type="text" placeholder="enter city here" />
+            </div>
+
+            <div>
+                <button id="submitButton"> Click Here </button>
+            </div>
+
+            <div id="texts">
+                <h1 id="cityName">Location</h1>
+                <h2 id="cityTime">Date</h2>
+                <h3 id="temp">Temperature</h3>
+                <span><button id='celFer'>F</button></span>
+                <h3 id="humidity">Humidity</h3>
+                <h3 id="sky">Sky</h3>
+                <h3 id="wind">Wind</h3>
+                <span><button id='mph'>MPH</button></span>
+            </div>
+        </div>  
+        
+
+
+    </body>
+</html>
