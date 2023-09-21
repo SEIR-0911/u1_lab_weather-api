@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+    <script defer src="/script.js"></script>
+    <title>Weather Channel</title>
+  </head>
+  <body>
+    <img
+      id="main-img"
+      src="https://cdn.weatherapi.com/v4/images/weatherapi_logo.png"
+      alt="Weather api logo" />
+    <h1>Weather Channel</h1>
+    <form>
+      <label id="direction">Enter a city to check the weather condtion.</label>
+      <input type="text" value="" placeholder="Choose your city" id="inputBar" />
+      <input type="button" value="Click here" id="searchButton" />
+    </form>
+    <div id="weather-p"></div>
+  </body>
+</html>
