@@ -2,40 +2,192 @@ html {
     height: 100%;
 }
 
-body {
+body{
+    /* border-left: 10px solid blue;
+    border-right: 10px solid blue; */
+    margin: auto;
+    width: 100%;
+    background-image: linear-gradient(yellow, blue);
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+}
+
+#top-bar {
+    width: 100%; 
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    /* width: 2000px; */
+}
+
+#topLeftImage {
+    display: flex;
+    width: 400px
+
+}
+
+#title {
+    background-image: linear-gradient(blue, yellow);
+    font-size: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
-    background-image: linear-gradient(blue,yellow);
-    text-align: center;
-    
+    width: 2000px;
+
+}
+
+#top {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: yellow;
+    color: black;
+}
+
+#datelocation {
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+#date {
+
+    width: 500px;
+    height: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+#location {
+
+    width: 1000px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 100px;
+    padding-top: 50px;
+
+}
+
+#pic-info {
+    display: flex;
+    justify-content: left;
+}
+
+img {
+    display: flex;
+    width: 250px;
+    padding-left: 300px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#information {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 1000px;
+    font-size: 5rem;
+    color: white;
+
+}
+
+#updated {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+#entercity {
+    display: flex;
+    justify-content: center;
 }
 
 #textInput {
-    margin-top: 25px;
-    border-radius: 10px;
+    font-size: 1.2em;
+    width: 500px;
     text-align: center;
 }
 
-h1, h2, h3 {
-    color: yellow;
+#submitButton {
+    width: 100px
 }
 
-img { 
-    border: 20px solid blue;
-    border-radius: 40px;
-}
 
-#container {
-    background-image: linear-gradient(yellow, blue);
-    padding: 20px;
-    border: 20px solid blue;
-    border-radius: 60px;
-}
+@media  screen and (max-width: 1000px) {
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    #top {
+        display: flex;
+        flex-direction: column;
+    }
 
-#mph, #celFer {
-    width: 50px;
-    background-color: blue;
-    color: white;
-    border-radius: 10px;
+    #top-bar {
+        height: 50px;
+    }
+
+    #title {
+        width: 100%;
+        font-size: 2em;
+        width: 1000px
+    
+    }
+
+    #datelocation {
+        font-size: 1.5em;
+        /* border: 1px solid black; */
+        flex-direction: row;
+        align-items: center;
+        padding-top: 0px;
+    }
+
+    #information {
+        width: 250px;
+        padding-left: 100px
+    }
+
+    img {
+        padding-left: 25px;
+
+    }
+
+    #textInput {
+        width: 300px;
+    }
+
+    
 }
+/* 
+animations
+@keyframes wind{
+    0% {
+      background-position: 0 200px, 0 300px, 100px 250px;
+    }
+    50% {
+      background-position: -1000px -200px, -1200px -300px,-1100px -250px;
+    }
+    100% {
+      background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+    }
+  
+  } */
