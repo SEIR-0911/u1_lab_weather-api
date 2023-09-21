@@ -6,8 +6,9 @@ const weatherDiv = document.createElement('div');
 
 
 const apiKey = "456a0b3a2778440f950162849232009";
-button.addEventListener('click', async () => {
+button.addEventListener('click', async (event) => {
     weatherDiv.innerHTML = ""
+    event.preventDefault();
 
     let input = document.querySelector("#inputBar").value
     if (input) {
