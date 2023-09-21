@@ -36,27 +36,17 @@ button.addEventListener('click', async (event) => {
         let lastUpdate = res.data.current.last_updated;
 
         weatherDiv.setAttribute("id", "weather-data");
-        weatherDiv.innerHTML += `<h3>Results for ${name} in ${region}</h3><h4>Country: ${country}</h4>`
-        weatherDiv.innerHTML += `<p>Local time: ${localtime}`
-        weatherDiv.innerHTML += `<img class="icon" src="${condtionImg}"/>`
-        weatherDiv.innerHTML += `<p>${currentCondition}</p>`
-        weatherDiv.innerHTML += `Temperature ${temp_c}˚C / ${temp_f}˚F<br/>`
-        weatherDiv.innerHTML += `Wind ${wind_dir} ${wind_kph}kph ${wind_mph}mph<br/>`
-        weatherDiv.innerHTML += `UV Index: ${uvIndex}<br/>`
-        weatherDiv.innerHTML += `last updated ${lastUpdate}<br/>`
-        weatherDiv.innerHTML += `</p>`
+        weatherDiv.innerHTML += `<h3>Results for ${name} in ${region}</h3><h4>Country: ${country}</h4>
+        <p><p>Local time: ${localtime}</p>
+        <p><img class="icon" src="${condtionImg}"/></p>
+        <p>${currentCondition}</p>
+        <p>Temperature ${temp_c}˚C / ${temp_f}˚F</p>
+        <p>Wind ${wind_dir} ${wind_kph}kph ${wind_mph}mph</p>
+        <p>UV Index: ${uvIndex}</p>
+        <p>Last updated ${lastUpdate}</p></p>`
 
         weatherP.append(weatherDiv);
     } else {
         weatherDiv.removeAttribute("id", "weather-data");
     }
 });
-
-
-//if (input) {
-// console.log("not empty")
-// const p = document.createElement('p');
-// p.setAttribute("class", "weather-data-style");
-// console.log(p)
-// weatherDiv.append(p)
-// console.log(weatherDiv)
