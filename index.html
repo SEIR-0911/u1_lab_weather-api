@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
+<body>
+    <div id="container">
+
+        <div id="top-bar">
+            <!-- <div id="pic"><img src="titlepage.jpg" id="topLeftImage"></div> -->
+            <div id="title"><header>The Canadian Weather Network</header></div>
+        </div>
+
+        <nav id="top">
+            <button id="temperature">Temperature</button>
+            <button id="wind">Wind</button>
+            <button id="uv-Index">UV Index</button>
+            <button id="humidity">humidity</button>
+            <button id="Pressure">Pressure</button>
+        </nav>
+
+        <div id="datelocation">
+            <div id="date"></div>
+            <div id="location"></div>
+        </div>
+
+        <div id="pic-info">
+            <div id="animation"><img id="weather-pic" src="Sun.png"></div>
+            <div id="information">Choose a location</div>
+        </div>
+
+        <div id="entercity">
+            <input id="textInput" type="text" placeholder="enter city here" />
+            <button id="submitButton"> Search </button>
+        </div>
+
+        <div id="updated">
+            <footer id="last-update">Last Updated:</footer>
+        </div>
+
+
+
+        <div></div>
+    </div>
+</body>
+
+
+
+</html>
