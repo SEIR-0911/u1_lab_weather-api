@@ -1,0 +1,41 @@
+/* Set background color to black */
+body {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    font-size: 24px; /* Increase font size */
+}
+
+/* Style the h1 element with light blue color, center text */
+h1 {
+    color: lightblue;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Center the container */
+.container {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+/* Style the image to the left of the information */
+.weather-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.weather-image {
+    margin-right: 20px;
+}
+
+/* Style additional information with outlines */
+.additional-info {
+  
+    padding: 10px;
+    margin-top: 10px;
+    text-align: left;
+}
